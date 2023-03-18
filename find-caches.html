@@ -1,0 +1,10 @@
+<input type="text" id="url">
+<button onclick="findCaches()">Find caches</button>
+
+<script>
+function findCaches() {
+	let url = document.querySelector('#url').value;
+	window.open('https://web.archive.org/web/*/' + url, '_blank');
+	window.open('https://webcache.googleusercontent.com/search?q=cache:' + url, '_blank');
+}
+</script>
